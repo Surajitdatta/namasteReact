@@ -1,0 +1,100 @@
+
+
+/* Login container */
+.unique-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Login box styling */
+.unique-login-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Heading */
+.unique-login-box h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Credentials section */
+.unique-login-box p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Input group styling */
+.unique-input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* Input fields */
+.unique-input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  outline: none;
+  transition: 0.3s ease;
+  background: rgba(255, 255, 255, 0.6); 
+  border-radius: 5px;
+}
+
+/* Label styling */
+.unique-input-group label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #aaa;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+/* Input focus state */
+.unique-input-group input:focus {
+  border-bottom: 2px solid #74ebd5;
+  background: rgba(255, 255, 255, 1); 
+}
+
+/* Move the label when input is focused */
+.unique-input-group input:focus + label,
+.unique-input-group input:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 0.8rem;
+  color: #74ebd5;
+}
+
+/* Button styling */
+.unique-login-btn {
+  background: linear-gradient(45deg, #4a90e2, #9013fe);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover effect */
+.unique-login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

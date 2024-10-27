@@ -1,0 +1,214 @@
+.search-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.search-input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #e2e2e2;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #3498db;
+}
+
+.search-dropdown {
+  padding: 10px;
+  margin-left: 10px;
+  border: 2px solid #e2e2e2;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-dropdown:focus {
+  border-color: #3498db;
+}
+
+.search-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.search-button:active {
+  transform: translateY(1px);
+}
+
+.cart-icon {
+  font-size: 24px;
+  color: #3498db;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+}
+
+.login-btn {
+  background: linear-gradient(45deg, #4a90e2, #9013fe);
+  color: #fff;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.login-btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.login-btn:hover:before {
+  left: 50%;
+  width: 100%;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
+.food-button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ff8a65, #ff7043);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(255, 112, 67, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.food-button:hover {
+  background: linear-gradient(45deg, #ff7043, #ff8a65);
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(255, 112, 67, 0.5);
+}
+
+.food-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 8px rgba(255, 112, 67, 0.3);
+}
+
+.food-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.food-button:hover::before {
+  left: 50%;
+  width: 100%;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .search-input,
+  .search-button,
+  .search-dropdown {
+    width: 90%; /* Adjust to 90% width */
+    margin-left: 0;
+  }
+
+  .search-button {
+    margin-top:10px;
+    padding: 10px 0;
+  }
+
+  .cart-icon,
+  .login-btn {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .search-input,
+  .search-dropdown,
+  .search-button {
+    width: 90%; /* Use 90% for mobile screens */
+  }
+
+  .cart-icon {
+    font-size: 20px;
+    width: 90%; /* Centered cart icon */
+    text-align: center;
+  }
+
+  .login-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 90%; /* Centered login button */
+    text-align: center;
+  }
+  .search-button{
+    margin-top: 10px;
+  }
+}

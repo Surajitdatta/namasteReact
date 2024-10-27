@@ -1,0 +1,189 @@
+/* Container Styling */
+.view-page-container {
+    background-color: #f4f4f9;
+    padding-bottom: 50px;
+}
+  
+/* Header Styling */
+.view-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff; /* Vibrant blue background */
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+  
+.view-header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+  
+.view-nav {
+    display: flex;
+}
+  
+.view-nav-link {
+    color: rgb(19, 19, 19);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+  
+.view-nav-link:hover {
+    text-decoration: underline;
+    color: #ff5a5f;
+}
+  
+/* Back button in the header */
+.view-back-btn-header {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+  
+.view-back-btn-header:hover {
+    color: #ff5a5f;
+}
+  
+/* Product Card Styling */
+.view-product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+  
+.view-product-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 100%;
+    width: 100%;
+    max-width: 800px;
+}
+  
+.view-product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+  
+.view-product-info {
+    display: flex;
+    flex-direction: column;
+}
+  
+.view-product-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+  
+.view-product-category,
+.view-product-price,
+.view-product-rating {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+  
+.view-product-description {
+    font-size: 1.1rem;
+    color: #999;
+    margin-bottom: 20px;
+}
+  
+/* Cart Section */
+.view-cart-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+  
+.view-quantity-controller {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+  
+.view-quantity-btn {
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+  
+.view-quantity {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+  
+.view-add-to-cart-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Back button */
+.view-back-btn {
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsive Media Queries */
+@media (min-width: 768px) {
+    .view-product-card {
+        flex-direction: row;
+    }
+
+    .view-product-image {
+        width: 300px;
+        height: 300px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .view-cart-section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .view-add-to-cart-btn, 
+    .view-back-btn {
+        width: auto;
+    }
+}

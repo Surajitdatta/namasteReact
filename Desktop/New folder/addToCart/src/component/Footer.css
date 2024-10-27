@@ -1,0 +1,151 @@
+/* Footer Container */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 5px solid #ff5a5f;
+  }
+  
+  /* Footer About Section */
+  .footer-about {
+    flex: 1;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-about h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ff5a5f;
+  }
+  
+  .footer-about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+  
+  /* Footer Links Section */
+  .footer-links {
+    flex: 1;
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ff5a5f;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #ff5a5f;
+  }
+  
+  /* Footer Contact Section */
+  .footer-contact {
+    flex: 1;
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-contact h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ff5a5f;
+  }
+  
+  .footer-contact p {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.8;
+  }
+  
+  .footer-contact a {
+    color: #ff5a5f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-contact a:hover {
+    color: #fff;
+  }
+  
+  /* Footer Social Media Section */
+  .footer-social {
+    flex: 1;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-social h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ff5a5f;
+  }
+  
+  .footer-social a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    color: #ff5a5f;
+  }
+  
+  /* Bottom Copy Section */
+  .footer-bottom {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    font-size: 1rem;
+    color: #aaa;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-about, .footer-links, .footer-contact, .footer-social {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .footer-social a {
+      font-size: 2rem;
+    }
+  }
+  
